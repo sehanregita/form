@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1 - Form Login, Registrasi & Lupa Password</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <!-- 1. Form Login -->
+    <div class="card">
+        <h2>Form Login</h2>
+        <form>
+            <div class="input-group">
+                <input type="email" placeholder="Masukkan email" required>
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Masukkan password" required>
+            </div>
+            <div class="forgot-pass">
+                <a href="#lupa-password">Lupa Password ?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <p class="footer-text">Belum punya akun? <a href="#registrasi">Daftar</a></p>
+        </form>
+    </div>
+
+    <!-- 2. Form Registrasi (Daftar) -->
+    <div class="card" id="registrasi">
+        <h2>Form Registrasi</h2>
+        <form>
+            <div class="input-group">
+                <input type="email" placeholder="Masukkan email" required>
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Masukkan password" required>
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Masukkan ulang password" required>
+            </div>
+            <button type="submit" class="btn">Daftar</button>
+            <p class="footer-text">Sudah punya akun? <a href="#">Login</a></p>
+        </form>
+    </div>
+
+    <!-- 3. Form Lupa Password -->
+    <div class="card" id="lupa-password">
+        <h2>Lupa Password</h2>
+        <p class="desc">Masukkan email Anda untuk menerima instruksi pemulihan kata sandi.</p>
+        <form>
+            <div class="input-group">
+                <input type="email" placeholder="Masukkan email terdaftar" required>
+            </div>
+            <button type="submit" class="btn">Kirim Link Reset</button>
+            <p class="footer-text">Kembali ke halaman <a href="#">Login</a></p>
+        </form>
+    </div>
+
+</body>
+              </html>
